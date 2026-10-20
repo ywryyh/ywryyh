@@ -11,7 +11,7 @@
 
 ### nudy — 화장 코치 모바일 웹 · 파이널 프로젝트
 
-> 2026.09 – 2026.10 · 6인 · [서비스](https://nudy.shelldocs.cloud) · [저장소](https://github.com/ywryyh/support-yr-makeup) · [원본](https://github.com/1DAN-2ZO/support-yr-makeup)
+> 2026.09 – 2026.10 · 6인 · 서비스 운영 종료 · [저장소](https://github.com/ywryyh/support-yr-makeup) · [원본](https://github.com/1DAN-2ZO/support-yr-makeup)
 
 따라 하고 싶은 화장 사진을 올리면 그 화장을 내 맨얼굴에 옮긴 그림을 만들고, 부위별로 어디에 얼마나 그릴지 보여 준 뒤, 다 하고 찍은 사진과 견줘 피드백을 줍니다.
 

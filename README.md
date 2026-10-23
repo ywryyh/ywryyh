@@ -25,6 +25,8 @@
 
 `TypeScript` `Vite` `MediaPipe` `Python` `FastAPI` `FLUX.2` `Docker` `GitHub Actions`
 
+→ [맡은 일·근거 커밋·트러블슈팅 자세히](projects/nudy.md)
+
 <br>
 
 ### VINUS — 시각장애인을 위한 음성 주문 키오스크
@@ -43,6 +45,8 @@
 
 `Python` `FastAPI` `SQLAlchemy` `MySQL` `Whisper` `ChromaDB` `transformers` `Docker`
 
+→ [맡은 일·AWS 배포 구조·트러블슈팅 자세히](projects/vinus.md)
+
 <br>
 
 ### 집가 — 술자리 미니게임 앱
@@ -51,7 +55,7 @@
 
 술자리 인원이 QR로 한 방에 모여 미니게임으로 순위를 가리고, 못한 사람에게는 카카오T가 뜹니다. 앱 이름이 그대로 벌칙 대사입니다 — "집 가."
 
-**백엔드 단독 설계·구현** · 백엔드 커밋 6건 중 5건
+**팀 명세 기반 백엔드 단독 구현** · 백엔드 커밋 6건 중 5건
 
 - 서버 코드와 Edge Function 없이 **Supabase Postgres만으로** 백엔드 구성
 - 테이블 4개, 행 수준 보안(RLS)으로 클라이언트는 자기 방만 읽게, 쓰기는 전부 RPC를 거치게
@@ -59,6 +63,8 @@
 - 폰마다 다른 시계를 보정하는 `server_now()` 추가
 
 `PostgreSQL` `PL/pgSQL` `Supabase` `Realtime`
+
+→ [명세 반영·버그 수정·추가 기능 구분 자세히](projects/zipga.md)
 
 <br>
 
@@ -75,6 +81,8 @@
 - 매수·매도 모달
 
 `React` `Redux Toolkit` `FastAPI` `SQLAlchemy` `MySQL` `JWT`
+
+→ [시세 생성 방식·데이터 설계 자세히](projects/updown.md)
 
 <br>
 

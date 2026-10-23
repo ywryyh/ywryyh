@@ -30,6 +30,7 @@ RDS MySQL (db.t3.small) · ECR vinus-backend / vinus-ai
 GitHub Actions: main push → 이미지 빌드(SHA 태그) → ECR → Task Definition 새 개정 → ECS 서비스 배포
 ```
 
+- **백엔드와 AI 서버를 나눈 이유는 장애 격리**입니다. 주문 대부분은 규칙 엔진이 처리하고 LLM은 규칙을 벗어난 자유 발화·추천 요청에서만 쓰기 때문에, 둘을 한 서버에 묶으면 LLM 쪽 장애나 재배포가 기본 주문까지 멈추게 됩니다. AI 서버 호출에는 10초 타임아웃을 두고, 실패하면 백엔드가 규칙 안내 문구로 대신 응답합니다.
 - 두 ECS 클러스터는 Auto Scaling 그룹(최소 0·최대 1)을 용량 공급자로 씀
 - 발화부터 응답까지 단계별 측정값(팀 성능평가): STT 708ms, LLM 457~640ms, TTS(Amazon Polly) 51ms, VAD·RAG 각 1ms 미만 → 합계 1.2~1.4초
 
